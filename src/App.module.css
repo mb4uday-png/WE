@@ -1,0 +1,42 @@
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-secondary);
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: var(--spacing-xl);
+}
+
+.errorBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background-color: #fee2e2;
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  border-bottom: 1px solid #fecaca;
+}
+
+.closeError {
+  background: none;
+  border: none;
+  font-size: var(--font-size-2xl);
+  color: var(--color-danger);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.closeError:hover {
+  background-color: #fecaca;
+}
